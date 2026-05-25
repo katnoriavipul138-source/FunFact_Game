@@ -284,6 +284,15 @@ unlockedAvatars: ["default"],
         }
 
 function showScreen(screenId) {
+    if (screenId === 'multiplayer-screen' && !currentState.user.loggedIn) {
+        showPopup(
+            'SIGN IN REQUIRED',
+            'Please sign in or sign up first to play Multiplayer.'
+        );
+        showScreen('signup-screen');
+        return;
+    }
+
     document.querySelectorAll('.screen').forEach(s => {
         s.classList.remove('active');
         s.scrollTop = 0;
