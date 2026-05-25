@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: url("background.jpeg") no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* IMPORTANT */
+.logo {
+    width: 500px;
+    max-width: 90%;
+    display: block;
+    background: none;
+}
+
+/* Start Button */
+.start-btn{
+margin-top: 400px;
+padding:18px 70px;
+font-size:28px;
+font-weight:bold;
+color:white;
+border:none;
+border-radius:50px;
+cursor:pointer;
+
+background:linear-gradient(45deg,#00c6ff,#0072ff,#6a5cff);
+box-shadow:
+0 0 10px #00c6ff,
+0 0 25px #0072ff,
+0 0 40px #6a5cff;
+transition:0.3s;
+}
+
+.start-btn:hover{
+transform:scale(1.08);
+box-shadow:
+0 0 20px #00c6ff,
+0 0 40px #0072ff,
+0 0 60px #6a5cff;
+}
+.start-btn:hover {
+    transform: scale(1.1);
+}
+
