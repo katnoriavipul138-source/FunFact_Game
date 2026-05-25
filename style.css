@@ -45,4 +45,20 @@ box-shadow:
 .start-btn:hover {
     transform: scale(1.1);
 }
+@media screen and (max-width: 768px) {
 
+    .logo{
+        width: 280px;
+    }
+
+    .start-btn{
+        margin-top: 250px;
+        padding: 14px 40px;
+        font-size: 20px;
+    }
+
+    body{
+        background-position: center;
+        background-size: cover;
+    }
+}
